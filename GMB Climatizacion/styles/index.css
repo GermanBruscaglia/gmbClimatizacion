@@ -1,0 +1,123 @@
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+/*utilodades*/
+.mw-768{
+    max-width: 768px;
+}
+.hg-auto{
+    height: auto;
+}
+.h-100vh{
+    height: 100vh;
+}
+
+/*menu-desplegable-mobile*/
+.menu-mobile{
+    height: 100vh;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    margin-left: -100%; 
+    z-index: 1010;
+    display: flex;
+}
+.ml-0{
+    margin-left: 0;
+}
+ .content-menu-mobile{
+    height: inherit;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+} 
+.content-menu-mobile {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.content-menu-mobile a {
+    text-decoration: none;
+    color: #fff;
+}
+.item-menu{
+    height: auto;
+    padding: .5rem ;
+    border-bottom: solid thin grey;
+}
+
+/*Barra navegacion Desktop*/
+.menu-desktop a{
+    color: white;
+    text-decoration: none;
+}
+.menu-desktop a:hover{
+    color: #b6b6b6;
+}
+.tst-e-5{
+    transition: all ease .5s;
+}
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*Header*/
+.header{
+    background-image: url("../images/fondoHeader.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/*Form Procesos*/
+ .form-proceso{
+    height: 100vh;
+}
+.container-proceso{
+    height: inherit;
+    width: inherit;
+}
+.seccion-form{
+   visibility: hidden;
+   opacity: 0;
+   transition: all .5s ease;
+   max-width: 768px;
+} 
+.activo{
+    opacity: 1;
+    visibility: visible; 
+}
+.btn-personalizado{
+    padding: .5rem;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+}
+
+/*form contacto*/
+.form-contacto{
+    height: auto;
+}
+
+
+/*Modal PDF*/
+.modal-pdf{
+    height: auto
+}

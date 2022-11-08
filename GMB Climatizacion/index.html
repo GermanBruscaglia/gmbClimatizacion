@@ -1,0 +1,292 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <title>GMB Climatización</title> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+  </head>
+  <body>
+
+    <!-- Menu desplegable mobile -->
+    <nav class="menu-mobile">
+          <ul class="content-menu-mobile bg-secondary ">
+            <li class="item-menu"><a href="#nosotros">Nosotros</a></li>                
+            <li class="item-menu"><a href="#proceso">Calculador online</a></li>
+            <li class="item-menu"><a href="#contacto">Contactanos</a></li>
+            <li class="item-menu"><a href="#sobre-mi">Sobre mi</a></li>
+            <li class="item-menu"><a href="https://www.instagram.com/gmbclimatizacion/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="item-menu"><a href="https://www.facebook.com/germanbruscaglia/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a></li>
+          </ul>
+    </nav>
+    
+
+    <!-- Barra navegacion desktop -->
+      <nav class=" d-flex justify-content-between justify-content-xl-around bg-primary p-2 fixed-bottom sticky-xl-top">
+
+      <div class="logo">
+        <a href="index.html"><img src="./images/logo.svg" width="48px" height="48px" alt="Logotipo GMB Climatizacion"></a>
+      </div>
+
+      <div class="menu-desktop d-none d-xl-flex align-items-center w-50">
+        <ul class=" list-unstyled d-flex justify-content-around m-0 w-100">
+          <li><a href="#nosotros">Nosotros</a></li>                
+          <li><a href="#proceso">Calculador online</a></li>
+          <li><a href="#contacto">Contactanos</a></li>
+          <li><a href="#sobre-mi">Sobre mi</a></li>
+          <li><a href="https://www.instagram.com/gmbclimatizacion/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/germanbruscaglia/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+      </div>
+
+       <button type="button" class="btn btn-light d-xl-none btn-close-menu position-absolute end-0 me-3 tst-e-5" id="btn-close-menu"><i class="fa-solid fa-x"></i></button>  
+       <button type="button" class="btn btn-light d-xl-none btn-close-menu position-absolute end-0 me-3 tst-e-5" id="btn-open-menu"><i class="fa-solid fa-bars "></i></button>  
+
+
+    </nav> 
+       
+
+    <header class="header d-flex flex-column justify-content-center align-items-center">
+      <div class="content-header text-center">
+              <h1 class="fw-bold display-1">GMB Climatización</h1>
+              <p class="fs-4  fw-bold ">La frescura que necesita tu hogar</p>
+      </div>
+    </header>
+    
+    <main class="main" id="nosotros">
+        <div class="px-4 py-5 my-5 text-center bg-secondary " style="--bs-bg-opacity: .2;">
+          <h2 class=" fw-bold" >¿Quiénes somos?</h2>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Somos una empresa dedicada al servicio tecnico de aires acondicionados en hogares y empresas. Con mas de cinco años en el mercado hemos logrado que todos nuestros clientes queden completamente conformes, siempre basados en el compromiso para con ellos. Nuestros trabajos son sinonimo de calidad, buscando la exelencia en todo lo que ofrecemos. </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row text-center">
+
+            <div class="col-sm-4">
+              <img src="./images/instalaciones.jpg" width="25%" height="auto" alt="">
+              <h2 class="fw-bold">Instalaciones</h2>
+              <p>Instalaciones de equipos de aire acondicionado tipo split, comerciales, equipos centrales con conductos y mucho más.   </p>
+             </div>
+
+            <div class="col-sm-4">
+             <img src="./images/reparaciones.png" width="25%" height="auto" alt="">
+             <h2 class="fw-bold">Reparaciones</h2>
+             <p>Reparaciones en general de equipos, mantenimientos preventivos, planes mensuales para empresas. </p>
+            </div>
+            
+            <div class="col-sm-4">
+             <img src="./images/obras.png" width="25%" height="auto" alt="">
+             <h2 class="fw-bold">Obras</h2>
+             <p>Obras de pre instalacion de cañerias de cobre, dejamos todo listo para una futura instalación. </p>
+            </div>
+          </div>
+        </div>
+    </main>
+
+     <section class="form-proceso mt-5  bg-secondary " style="--bs-bg-opacity: .2;" id="proceso">
+
+      <div class="container-proceso d-flex justify-content-center flex-column align-items-center text-center">
+
+        <div class="container mw-768  seccion-form info-form activo position-absolute ">
+          <h3>¿No sabes que aire acondicionado comprar?</h3>
+          <p>Con nuestro calculador online vas a saber que es lo que mas te conviene</p>
+          <p>Completa el siguiente formulario y listo</p>
+          <div class="button ">
+            <button type="button" class="btn btn-primary " id="comenzar">Comenzar simulador</button>
+          </div>
+        </div>
+
+        <div class=" container mw-768  seccion-form info-tecnica  position-absolute">
+          <h3 >PASO 1: Dimensiones del ambiente</h3>
+          <form class="d-flex flex-column align-items-center" id="dimensiones">
+            <div class="mb-3 ">
+              <label for="exampleInputEmail1" class="form-label">Largo del ambiente(en metros)</label>
+              <input type="number" name="largo" class="form-control" id="largo" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Ancho del ambiente(en metros)</label>
+              <input type="number" name="ancho" class="form-control"  id="ancho" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Altura del ambiente(en metros)</label>
+              <input type="number" name="alto" class="form-control" id="altura" required>
+            </div>
+            <input type="submit" class="bg-primary btn-personalizado" id="siguiente" value="Siguiente paso">
+          </form>
+        </div>
+
+        <div class="container mw-768  seccion-form info-personal position-absolute">
+          <h3>PASO 2: Datos personales</h3>
+          <form class="d-flex flex-column align-items-center" id="form-personal">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nombre</label>
+              <input type="text" name="nombre" class="form-control" id="largo" title="Solo se aceptan letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Apellido</label>
+              <input type="text" name="apellido" class="form-control" id="ancho" title="Solo se aceptan letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Mail</label>
+              <input type="email" name="mail" class="form-control" id="altura" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+            </div>
+            <div class="button">
+              <input type="button" class="bg-primary btn-personalizado" id="anterior" value="Paso anterior">
+              <input type="submit" class="bg-primary btn-personalizado" id="finalizar" value="Ver resultado">
+            </div>
+          </form>
+
+        </div>
+        
+        <div class="seccion-form container-print-pdf position-absolute container-fluid container-md  p-4 text-start mw-768 bg-light border border-dark" id="modal-pdf">
+
+
+          <div class="print-pdf">
+            <div class="row text-center border border-dark ">
+              <h4 >Simulador Online</h4>
+            </div>
+            <div class="row text-center border border-dark mt-2">
+              <h6 >Datos Personales</h6>
+            </div>
+            <div class="row datos-usuario d-flex flex-column">
+            </div>
+            <div class="row text-center border border-dark mt-1">
+              <h6>Medidas ingresadas</h6>
+            </div>
+            <div class="row datos-ingresados d-flex flex-column">
+            </div>
+            <div class="row text-center border border-dark mt-1">
+              <h6>Resultado</h6>
+            </div>
+            <div class="row mt-1 resultado-simulador">
+              
+            </div>
+            <div class="row mt-2 border border-danger">
+              <div class="col "><strong>Aclaración:</strong> este simulador no contempla alteraciones externas, si usted considera que el resultado no se adecua a lo requerido le recomendamos gestionar una visita completando el formulario de contacto. <a href="#contacto">Completar formulario</a></div>
+            </div>
+          </div>
+           
+          <div class="button mt-5 text-center ">
+            <input type="button" class="bg-primary btn-personalizado" id="revisar" value="Modificar Datos">
+            <input type="button" class="bg-primary btn-personalizado" id="btnPdf" value="Descargar PDF">
+          </div>
+          
+        </div>
+
+      </div>
+      
+    </section> 
+    
+    <span id="contacto"></span>
+
+     <section class="form-contacto  mt-5 pt-3 pb-3 bg-secondary d-flex flex-column justify-content-center align-items-center" style="--bs-bg-opacity: .2;" >
+      <div class="container-contacto container  text-center ">
+        <h3>¿Querés coordinar una visita o consultar alguna otra cosa?</h3>
+      <p>Completa el siguiente formulario y nos ponemos en contacto con vos</p>
+      </div>
+
+      <form class="contacto-form">
+        <div class="container mw-768">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido </label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" title="Solo se aceptan letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email </label>
+            <input type="email"  class="form-control" id="exampleFormControlInput1" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+          </div>
+          <div class="button d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary " id="enviar-form">Enviar</button>
+          </div>
+        </div>
+      </form>
+      
+      
+    </section> 
+
+    <article class="sobre-mi container-fluid  text-white mt-5 mb-5 p-2" id="sobre-mi">
+
+      <div class="container bg-secondary d-lg-flex align-items-lg-center p-lg-3 shadow-lg" style="--bs-bg-opacity: .8;">
+
+        <div class="row p-3">
+        <div class="descripcion ">
+          <h2 class="text-center">Germán Bruscaglia</h2>
+          <h6>Un poco sobre mi:</h6>
+            <p>Antes que nada gracias por visitar este sitio web, el cual fue desarrollado integramente por mi.
+            <br>
+              Mi nombre es Germán Bruscaglia, tengo 28 años de edad y soy de Rosario, Santa fe, Argentina.
+              <br>
+              Tengo el titulo en Analista de Sistemas de Computación y me oriento hacia todo lo que es el desarrollo web Front-End. 
+            </p>
+        </div>
+      </div>
+
+      <div class="row p-3">
+
+        <div class="herramientas ">
+          <h2 class="text-center"> Lenguajes y herramientas</h2>
+          <div class="imagenes-herramientas d-flex justify-content-around me-auto ms-auto w-100 mw-768 p-3">
+            <img src="./images/javascaript 1.svg" width="48px" height="auto" alt="">
+            <img src="./images/html 1.svg" width="48px" height="auto" alt="">
+            <img src="./images/css 1.svg" width="48px" height="auto" alt="">
+            <img src="./images/github 1.svg" width="48px" height="auto" alt="">
+            <img src="./images/boostrap.svg" width="48px" height="auto" alt="">
+          </div>
+        </div>
+        <div class="contacto-personal mt-5">
+          <h2 class="text-center">Contacto</h2>
+          <div class="imagenes-contacto d-flex justify-content-around me-auto ms-auto w-100 mw-768 p-3">
+            <a href="https://wa.me/+5403413668415" target="_blank" rel="noopener"><img src="./images/whatsapp 1.svg" width="48px" height="auto" alt=""></a>
+            <a href="https://linkedin.com/in/german-bruscaglia-715a49188" target="_blank" rel="noopener"><img src="./images/linkedin 1.svg" width="48px" height="auto" alt=""></a>
+            <a href="mailto:germanbruscaglia@gmail.com"><img src="./images/gmail 1.svg" width="48px" height="auto" alt=""></a>
+          </div>
+        </div>
+
+      </div>
+      </div>
+      
+    </article>
+  
+
+    <footer class="bg-primary container-fluid d-flex flex-column align-items-center flex-md-row justify-content-around text-white mb-5 mb-xl-0" >
+      <div class="info-empresa col-6 w-auto  fw-bold">
+        <ul class="list-unstyled">
+          <li class="text-center">GMB Climatización</li>
+          <li> <i class="fa-solid fa-calendar-days"></i>  Lunes a viernes de 8 a 18 hs</li>
+          <li><i class="fa-solid fa-map-location-dot"></i> Avenida Inventada 1234</li>
+          <li><i class="fa-solid fa-location-dot"></i>  Rosario, Santa Fe - Argentina</li>
+        </ul>
+      </div>
+
+      <div class="info-contacto col-6 w-auto fw-bold">
+        <ul class="list-unstyled">
+          <li class="text-center">Contacto</li>
+          <li><i class="fa-brands fa-whatsapp"></i> 9876 - 543210</li>
+          <li><i class="fa-solid fa-phone"></i> 0123 - 456789</li>
+          <li><i class="fa-solid fa-envelope"></i> gmbclimatizacion@gmail.com</li>
+        </ul>
+      </div>
+    </footer>
+     
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/75a205f21a.js" crossorigin="anonymous"></script>
+<script src="./scripts/index.js" type="module"></script>
+
+
+      
+  </body>
+</html>
